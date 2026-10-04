@@ -1,0 +1,12 @@
+04/10/2026 13:19:43 | ALTA | DenunciaCategorias | Vandalismo
+04/10/2026 13:20:11 | MODIFICACION | DenunciaCategorias | id=4 nombre=Vandalismo
+04/10/2026 13:20:19 | MODIFICACION | DenunciaCategorias | id=4 nombre=Vandalismo Urbano
+04/10/2026 13:20:42 | BAJA | DenunciaCategorias | id=4
+04/10/2026 13:32:42 | ALTA | Denunciantes | Vargas, Emmanuel
+04/10/2026 13:32:50 | MODIFICACION | Denunciantes | id=3 Vargas, Emmanuel
+04/10/2026 13:33:03 | MODIFICACION | Denunciantes | id=3 Vargas, Emma
+04/10/2026 13:33:09 | MODIFICACION | Denunciantes | id=3 Vargas, Emmanuel
+04/10/2026 13:37:04 | ALTA | Denuncias | cat=1 den=3 texto=Se notifican ruidos molestos por fiesta clandestina masiva
+04/10/2026 13:47:54 | ALTA | DenunciaCategorias | Asaltos
+04/10/2026 13:48:19 | ALTA | Denunciantes | Gomez, Juan Carlos
+04/10/2026 13:48:56 | ALTA | Denuncias | cat=4 den=4 texto=Declara un robo en la calle

@@ -1,0 +1,31 @@
+DROP DATABASE IF EXISTS `ISSD-TP4-202601`;
+CREATE DATABASE `ISSD-TP4-202601` CHARACTER SET utf8mb4;
+USE `ISSD-TP4-202601`;
+
+CREATE TABLE DenunciaCategorias (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Denunciantes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    apellido VARCHAR(50) NOT NULL,
+    nombre VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Denuncias (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    texto TEXT,
+    idDenunciaCategoria INT NOT NULL,
+    idDenunciante INT NOT NULL,
+    FOREIGN KEY (idDenunciaCategoria) REFERENCES DenunciaCategorias(id),
+    FOREIGN KEY (idDenunciante) REFERENCES Denunciantes(id)
+);
+
+-- Datos de prueba
+INSERT INTO DenunciaCategorias (nombre) VALUES ('Ruidos molestos'), ('Basura'), ('Seguridad');
+INSERT INTO Denunciantes (apellido, nombre) VALUES ('Pérez', 'Juan'), ('Gómez', 'María');
+INSERT INTO Denuncias (texto, idDenunciaCategoria, idDenunciante) VALUES
+('Música alta de madrugada', 1, 1),
+('Basura en la vereda', 2, 1),
+('Falta de luz en la plaza', 3, 2);
